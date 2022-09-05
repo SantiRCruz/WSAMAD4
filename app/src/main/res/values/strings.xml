@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WSAMAD4</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome">Welcome!</string>
+    <string name="if_you_don_t_have_account_credentials_you_can_take_it_nin_near_hospital_in_your_city_after_vaccination">if you don’t have account credentials, you can take it\nin near hospital in your city after vaccination</string>
+    <string name="your_login">Your Login</string>
+    <string name="your_password">Your Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wsa_care">WSA Care</string>
+    <string name="in_skill_area_nin_the_last_14_days">in skill area \nin the last 14 days</string>
+    <string name="clear">CLEAR</string>
+    <string name="name">Name:</string>
+    <string name="john">John,</string>
+    <string name="how_are_you_feeling_today">How are you feeling today?</string>
+    <string name="check_in_now">Check in now</string>
+    <string name="why_do_this">Why do this?</string>
+    <string name="you_have_checked_in_today">You have checked in today.</string>
+    <string name="re_check_in">Re-check in</string>
+</resources>
