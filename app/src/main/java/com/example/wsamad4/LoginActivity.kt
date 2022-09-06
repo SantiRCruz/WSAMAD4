@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         clicks()
     }
     private fun clicks() {
-        binding.btnSignIn.setOnClickListener { validate() }
+        binding.btnSignInLogin.setOnClickListener { validate() }
     }
 
     private fun validate() {
@@ -101,10 +101,10 @@ class LoginActivity : AppCompatActivity() {
     private fun sendVisible(b: Boolean) {
         if (b) {
             binding.progress.visibility = View.VISIBLE
-            binding.btnSignIn.visibility = View.GONE
+            binding.btnSignInLogin.visibility = View.GONE
         } else {
             binding.progress.visibility = View.GONE
-            binding.btnSignIn.visibility = View.VISIBLE
+            binding.btnSignInLogin.visibility = View.VISIBLE
         }
     }
 
@@ -122,12 +122,14 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun alertMessage(s: String) {
+        binding.llAlert.visibility = View.VISIBLE
         binding.txtAlert.text = s
-        binding.btnSignIn.animate().translationY(300f).setDuration(200).withEndAction {
+        binding.btnSignInLogin.animate().translationY(300f).setDuration(200).withEndAction {
             binding.llAlert.animate().alpha(1f).setDuration(200).withEndAction {
                 binding.llAlert.animate().alpha(1f).setDuration(800).withEndAction {
                     binding.llAlert.animate().alpha(0f).setDuration(200)
-                    binding.btnSignIn.animate().translationY(0f).setDuration(200)
+                    binding.btnSignInLogin.animate().translationY(0f).setDuration(200)
+                    binding.llAlert.visibility = View.GONE
                 }
             }
         }

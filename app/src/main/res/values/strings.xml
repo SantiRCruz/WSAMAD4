@@ -17,4 +17,8 @@
     <string name="why_do_this">Why do this?</string>
     <string name="you_have_checked_in_today">You have checked in today.</string>
     <string name="re_check_in">Re-check in</string>
+    <string name="qr_code">QR Code</string>
+    <string name="you_need_to_have_access_to_internet">You need to have access to internet</string>
+    <string name="try_again">Try Again</string>
+    <string name="use_this_qr_code_in_restaraunts_and_aerports_nyou_can_t_give_it_to_anyone_else">Use this QR-code in restaraunts and aerports\nYou can’t give it to anyone else</string>
 </resources>

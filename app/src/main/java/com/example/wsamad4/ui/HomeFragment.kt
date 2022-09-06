@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources.getColorStateList
+import androidx.navigation.fragment.findNavController
 import com.example.wsamad4.R
 import com.example.wsamad4.core.Constants
 import com.example.wsamad4.data.get
@@ -33,6 +34,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         obtainActualDate()
         obtainCases()
         obtainHistory()
+        clicks()
+    }
+
+    private fun clicks() {
+        binding.imgQrH.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_qrFragment) }
+        binding.imgMap.setOnClickListener { findNavController().navigate(R.id.action_homeFragment_to_mapFragment) }
     }
 
     private fun obtainHistory() {

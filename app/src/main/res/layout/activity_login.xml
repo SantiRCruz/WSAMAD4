@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_main"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    >
 
     <ImageView
         android:layout_width="wrap_content"
@@ -31,7 +32,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/loginScreen">
 
             <TextView
                 android:id="@+id/textView"
@@ -47,6 +49,7 @@
 
             <ImageView
                 android:id="@+id/imageView"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/circles_login"
@@ -120,8 +123,8 @@
 
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnSignIn"
+            <Button
+                android:id="@+id/btnSignInLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_marginTop="50dp"
@@ -145,6 +148,7 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="50dp"
                 android:alpha="0"
+                android:visibility="gone"
                 android:background="@drawable/rounded"
                 android:backgroundTint="@color/dark_blue"
                 app:layout_constraintBottom_toBottomOf="parent"

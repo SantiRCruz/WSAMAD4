@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
     <ImageView
-        android:id="@+id/imgQr"
+        android:id="@+id/imgQrH"
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_marginEnd="30dp"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/rounded"
-        app:layout_constraintEnd_toEndOf="@+id/imgQr"
+        app:layout_constraintEnd_toEndOf="@+id/imgQrH"
         app:layout_constraintStart_toStartOf="@+id/imgMap"
         app:layout_constraintTop_toBottomOf="@+id/txtActualDate">
 
@@ -90,7 +90,8 @@
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded"
-                    android:backgroundTint="@color/light_dark_blue_200">
+                    android:backgroundTint="@color/light_dark_blue_200"
+                    android:elevation="10dp">
 
                     <TextView
                         android:id="@+id/txtNumCases"
@@ -126,8 +127,10 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="16dp"
                     android:layout_weight="1"
+                    android:elevation="20dp"
                     android:background="@drawable/rounded"
                     android:backgroundTint="@color/dark_blue">
+
 
                     <ImageView
                         android:layout_width="26dp"
@@ -391,8 +394,8 @@
             <View
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:background="@color/white"
                 android:layout_marginBottom="35dp"
+                android:background="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
@@ -416,8 +419,8 @@
                 android:id="@+id/imgInfo"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/info"
                 android:layout_marginTop="12dp"
+                android:src="@drawable/info"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -427,9 +430,9 @@
                 style="@style/textBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="@string/you_have_checked_in_today"
                 android:textSize="24sp"
-                android:layout_marginTop="4dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
